@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div></div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasama CSS</title>
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.typekit.net/erb5jgh.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="mobile-menu" style="display: none;">
+        <button id="close-menu">X</button>
+        <p><a href="#">Menu</a></p>
+        <p><a href="#">Reservation</a></p>
+        <p><a href="#">Contact</a></p>
+        <p><a href="#">About</a></p>
+    </div>
+    <header class="grid-container-header header">
+        <img src="images/Kasama-favicon4.png">
+        <nav class="nav">
+            <a href="#">Menu</a>
+            <a href="#">Reservation</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <button id="mobile-button">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-image about-us-background">
+            <div class="hero-text">
+                <img src="images/Kasama-Logo-2.png" width="400" class="logo">
+                <h3>The world’s first Michelin-starred Filipino Restaurant.</h3>
+                <p><a class="button">View Menu</a></p>
+            </div>
+        </section>
+        <section class="display-flex container">
+            <div class="about-text">
+                <h3>We make food from the heart</h3>
+                <p>Kasama translates to “together,” speaking to the husband and wife team - Tim Flores and Genie Kwon,  and the Filipino food culture. It’s about gathering, sharing, and connecting.</p>
+            </div>
+            <img src="images/kasama1.jpg" class="responsive-image" width="495">
+            </section>
+        <section class="display-flex container flex-direction">
+            <div class="about-text">
+                <h3>An ambient Dining experience</h3>
+                <p>At our modern Filipino restaurant, we’ve created an ambient dining experience that’s a true celebration of Filipino culture, flavors, and hospitality. Join us and savor the best of the Philippines in a setting that combines the best of tradition and modernity.</p>
+            </div>
+            <img src="images/kasama2.jpg" class="responsive-image" width="495">
+        </section>
+        <section class="menu-background">
+                <h1 class="menu2">Menu</h1>
+            <div class="grid-container menu-margins">
+                <div class="menu">
+                    <img src="images/kasama-pastry.jpg" width="264" style="padding-right: 8px;">
+                    <h3>Pastries</h3>
+                </div>
+                <div class="menu">
+                    <img src="images/kasama-lunch.jpg" width="264" style="padding-right: 4px; padding-left: 4px;">
+                    <h3>Lunch</h3>
+                </div>
+                <div class="menu">
+                    <img src="images/kasama-dinner.jpg" width="264" style="padding-left: 8px">
+                    <h3>Dinner</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-background">
+            <div class="grid-container footer-margins" margin="60px">
+                <div class="footer-text">
+                    <h4>Address</h4>
+                    <p>1001 N. Winchester Ave.</p>
+                    <p>Chicago, Illinois 6062</p>
+                </div>
+                <div class="footer-text">
+                    <h4>Hours</h4>
+                    <p>Wednesday - Sunday</p>
+                    <p> 9am - 3pm</p>
+                </div>
+                <div class="footer-text">
+                    <h4>Contact</h4>
+                    <p>(773) 697-3790</p>
+                    <p>Kasama.com</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="javascript/index.js"></script>
+</body>
 </html>
